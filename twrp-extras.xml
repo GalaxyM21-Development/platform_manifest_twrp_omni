@@ -7,10 +7,13 @@
     <remote name="LineageOS"
             fetch="https://github.com/LineageOS"
             review="https://review.lineageos.org" />
+    
+    <remote name="ianmacd"
+            fetch="https://github.com/ianmacd" />    
 
 <!-- TWRP lives in TeamWin android-10.0 (not AOSP!) -->
     <remove-project name="platform/bootable/recovery"/>
-    <project path="bootable/recovery" name="android_bootable_recovery" remote="TeamWin" revision="android-10.0" />
+    <project path="bootable/recovery" name="android_bootable_recovery" remote="ianmacd" revision="android-10.0" />
 
 <!-- Use TeamWin repos for full recovery compatibility -->
     <remove-project name="android_system_core"/>
